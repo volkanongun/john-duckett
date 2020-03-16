@@ -185,6 +185,69 @@
 		        <input type="text" name="telephone" />
 		    </label>
 		</fieldset>
+
+		<hr/>
+		<!--================================
+		=            validation            =
+		=================================-->
+		<form action="http://www.example.com/login/" method="post">
+		    <label for="username">Username:</label>
+		    <input type="text" name="username" required="required" oninvalid="this.setCustomValidity('Boş bırakılamaz')" oninput="setCustomValidity('')" />
+		    <br />
+		    <label for="password">Password:</label>
+		    <input type="password" name="password" required="required" oninvalid="this.setCustomValidity('Boş bırakılamaz')" oninput="setCustomValidity('')" />
+		    <input type="submit" value="Submit" />
+		</form>
+
+		<hr/>
+		<!--==========================
+		=            Date            =
+		===========================-->
+		<form action="http://www.example.com/bookings/" method="post">
+		    <label for="username">Departure date:</label>
+		    <input type="date" name="depart" />
+		    <input type="submit" value="Submit" />
+		</form>
+
+		<hr/>
+		<!--======================================
+		=            input type email            =
+		=======================================-->
+		<form action="http://www.example.org/subscribe.php"> 
+			<p>Please enter your email address:</p>
+			<input type="email" name="email" />
+			<input type="submit" value="Submit" />
+		</form>
+
+		<hr/>
+		<!--====================================
+		=            input type url            =
+		=====================================-->
+		<form action="http://www.example.org/profile.php">
+		    <p>Please enter your website address:</p>
+		    <input type="url" name="website" />
+		    <input type="submit" value="Submit" />
+		</form>
+
+		<hr/>
+		<!--=======================================
+		=            input type search            =
+		========================================-->
+		<form action="http://www.example.org/search.php">
+		    <p>Search:</p>
+		    <input type="search" name="search" />
+		    <input type="submit" value="Search" />
+		</form>
+
+		<hr/>
+		<!--=================================
+		=            placeholder            =
+		==================================-->
+		<form action="http://www.example.org/search.php">
+		    <p>Search:</p>
+		    <input type="search" name="search" placeholder="Enter keyword" />
+		    <input type="submit" value="Search" />
+		</form>
 	</div>
 
 </body>
