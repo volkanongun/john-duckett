@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Adding HTML5 Video</title>
+  </head>
+  <body>
+
+  	<!--=================================
+  	=            HTML5 video            =
+  	==================================-->
+	<video src="videos/puppy.mp4" poster="images/puppy.jpg" width="400" height="300" preload controls loop>
+		<p>A video of a puppy playing in the snow</p>
+    </video>
+
+    <hr>
+	<!--============================================
+	=            multiple video sources            =
+	=============================================-->
+	
+    <video poster="images/puppy.jpg" width="400" height="320" preload controls loop>
+	    <source src="videos/puppy.mp4" type='video/mp4;codecs="avc1.42E01E, mp4a.40.2"' />
+	    <source src="videos/puppy.webm" type='video/webm;codecs="vp8, vorbis"' />
+	    <p>A video of a puppy playing in the snow</p>
+	</video>
+
+	<hr>
+	<!--===========================
+	=         html 5 audio        =
+	============================-->
+	<audio src="audios/test-audio.ogg" controls>
+		<p>This browser does not support our audio format.</p>
+	</audio>
+
+	<hr>
+	<!--============================================
+	=            multiple audio sources            =
+	=============================================-->
+	<audio controls autoplay>
+		<source src="audios/test-audio.ogg" /> 
+		<source src="audios/test-audio.mp3" /> 
+		<p>This browser does not support our audio format.</p>
+	</audio>
+  </body>
+</html>
